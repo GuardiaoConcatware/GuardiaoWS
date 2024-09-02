@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A346EB2-CA71-4707-96C7-0D7FFF734A83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GUARDIAO_CONTROLLER</RootNamespace>
+    <AssemblyName>guardiaoController</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\DESCOMPLICA_WS\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATABASE\Atendimento.cs" />
+    <Compile Include="DATABASE\Atendimentos.cs" />
+    <Compile Include="DATABASE\CrudUsuarios.cs" />
+    <Compile Include="DATABASE\Empresa.cs" />
+    <Compile Include="DATABASE\Escritorio.cs" />
+    <Compile Include="DATABASE\Especialidade.cs" />
+    <Compile Include="DATABASE\ExtratoController.cs" />
+    <Compile Include="DATABASE\Faculdade.cs" />
+    <Compile Include="DATABASE\GrupoUsuario.cs" />
+    <Compile Include="DATABASE\GrupoUsuarioEscritorio.cs" />
+    <Compile Include="DATABASE\GrupoUsuarioFaculdade.cs" />
+    <Compile Include="DATABASE\HistoricoAtendimento.cs" />
+    <Compile Include="DATABASE\Municipio.cs" />
+    <Compile Include="DATABASE\Notificacoes.cs" />
+    <Compile Include="DATABASE\ParametrosSistema.cs" />
+    <Compile Include="DATABASE\PercentualPreco.cs" />
+    <Compile Include="DATABASE\Saldo.cs" />
+    <Compile Include="DATABASE\SolicitacaoAtendimento.cs" />
+    <Compile Include="DATABASE\SolicitacaoRecebimento.cs" />
+    <Compile Include="DATABASE\TabelaPreco.cs" />
+    <Compile Include="DATABASE\TipoConsulta.cs" />
+    <Compile Include="DATABASE\TipoUsuario.cs" />
+    <Compile Include="DATABASE\Usuario.cs" />
+    <Compile Include="ASAAS\PagamentoCartaoController.cs" />
+    <Compile Include="ASAAS\QrCodeEstaticoController.cs" />
+    <Compile Include="ASAAS\CustomerController.cs" />
+    <Compile Include="SaldoController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEITA_FEDERAL\ReceitaFederal.cs" />
+    <Compile Include="SOAPHEADER\ValidateSoapHeader.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GUARDIAO_COMMOM\GUARDIAO_COMMOM.csproj">
+      <Project>{9d7cd24a-8a09-4f7e-8437-ac274a6c75aa}</Project>
+      <Name>GUARDIAO_COMMOM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUARDIAO_CRUD\GUARDIAO_CRUD.csproj">
+      <Project>{b9a5e351-70a1-40bf-8b04-4fba3b248b4c}</Project>
+      <Name>GUARDIAO_CRUD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUARDIAO_HELPER_ASAAS\GUARDIAO_HELPER_ASAAS.csproj">
+      <Project>{14765b41-1062-491b-8f37-c623eac9d0f0}</Project>
+      <Name>GUARDIAO_HELPER_ASAAS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUARDIAO_STRUCTS\GUARDIAO_STRUCTS.csproj">
+      <Project>{d27bb69a-9c42-4200-b4f1-68c2b8ac005e}</Project>
+      <Name>GUARDIAO_STRUCTS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

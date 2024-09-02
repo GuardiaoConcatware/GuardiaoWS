@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\CONCATWARE\GITHUB\GUARDIAO_DIREITO\GUARDIAO_WS\GUARDIAO_WS\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2024-08-28T19:12:44.1935378Z;False|2024-08-28T16:12:17.8829482-03:00;True|2024-08-23T18:45:12.1627691-03:00;False|2024-08-23T18:44:53.4883297-03:00;True|2024-08-23T12:22:04.9821852-03:00;False|2024-08-23T12:21:37.4176149-03:00;True|2024-08-14T14:24:22.4698156-03:00;True|2024-08-14T14:08:45.2624240-03:00;False|2024-08-14T14:08:17.4896055-03:00;True|2024-08-13T17:18:46.5073986-03:00;True|2024-08-13T10:25:49.0403862-03:00;False|2024-08-13T10:25:31.6638622-03:00;True|2024-08-12T18:29:00.6597461-03:00;True|2024-08-12T16:14:44.4421618-03:00;False|2024-08-12T16:14:21.7995264-03:00;True|2024-08-09T23:21:16.9352133-03:00;False|2024-08-09T23:20:20.7947153-03:00;True|2024-08-02T19:20:06.0232044-03:00;False|2024-08-02T19:19:35.3061005-03:00;True|2024-08-02T15:39:18.9129492-03:00;True|2024-08-02T15:39:08.3519240-03:00;True|2024-08-02T12:01:58.8873989-03:00;False|2024-08-02T12:01:41.0512232-03:00;True|2024-08-01T23:28:21.5184035-03:00;False|2024-08-01T23:28:05.7205669-03:00;True|2024-08-01T19:49:00.9012957-03:00;True|2024-08-01T19:43:53.2118386-03:00;True|2024-08-01T19:11:28.9447710-03:00;False|2024-08-01T19:11:12.4169551-03:00;True|2024-07-31T18:29:16.0633966-03:00;False|2024-07-31T18:29:00.3300745-03:00;True|2024-07-30T19:19:56.1958946-03:00;True|2024-07-30T18:57:43.9824829-03:00;False|2024-07-30T18:57:20.1146742-03:00;True|2024-07-29T18:54:57.3184371-03:00;False|2024-07-29T18:54:34.6930907-03:00;True|2024-07-25T15:43:06.5952726-03:00;False|2024-07-25T15:40:46.3045600-03:00;True|2024-07-17T16:41:17.3603065-03:00;False|2024-07-17T16:40:55.8873378-03:00;True|2024-07-11T12:46:07.5646402-03:00;True|2024-07-11T12:45:47.6630030-03:00;False|2024-07-11T12:45:27.3183535-03:00;True|2024-07-10T19:00:35.8577703-03:00;False|2024-07-10T19:00:18.6200924-03:00;True|2024-07-08T15:38:07.5762097-03:00;False|2024-07-08T15:37:50.0519656-03:00;True|2024-07-04T15:56:14.1890079-03:00;False|2024-07-04T15:55:54.0072954-03:00;True|2024-06-28T20:58:58.5482701-03:00;True|2024-06-28T19:06:06.6196592-03:00;True|2024-06-28T16:22:31.5495613-03:00;False|2024-06-28T16:22:10.8922641-03:00;True|2024-06-28T13:42:43.5724701-03:00;False|2024-06-28T13:42:21.1330141-03:00;True|2024-06-27T22:28:30.1663801-03:00;False|2024-06-27T22:28:14.1140312-03:00;True|2024-06-26T21:18:27.7798838-03:00;False|2024-06-26T21:18:05.1272948-03:00;True|2024-06-26T14:44:45.8698605-03:00;True|2024-06-26T14:37:27.9185520-03:00;False|2024-06-26T14:37:14.4858988-03:00;True|2024-06-25T11:25:41.9137172-03:00;False|2024-06-25T11:25:17.6372500-03:00;True|2024-06-24T21:55:04.6709676-03:00;False|2024-06-24T21:54:32.7082213-03:00;True|2024-04-08T16:29:22.5141648-03:00;True|2024-04-08T12:11:45.7823854-03:00;True|2024-04-05T18:29:33.9294517-03:00;True|2024-02-29T19:32:16.6358060-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/guardiaoCommom.dll">
+      <publishTime>08/23/2024 12:21:58</publishTime>
+    </File>
+    <File Include="bin/guardiaoCommom.dll.config">
+      <publishTime>06/24/2024 19:01:35</publishTime>
+    </File>
+    <File Include="bin/guardiaoCommom.pdb">
+      <publishTime>08/23/2024 12:21:58</publishTime>
+    </File>
+    <File Include="bin/guardiaoController.dll">
+      <publishTime>08/23/2024 12:21:59</publishTime>
+    </File>
+    <File Include="bin/guardiaoController.dll.config">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/guardiaoController.pdb">
+      <publishTime>08/23/2024 12:21:59</publishTime>
+    </File>
+    <File Include="bin/guardiaoCrud.dll">
+      <publishTime>08/23/2024 12:21:59</publishTime>
+    </File>
+    <File Include="bin/guardiaoCrud.dll.config">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/guardiaoCrud.pdb">
+      <publishTime>08/23/2024 12:21:59</publishTime>
+    </File>
+    <File Include="bin/guardiaoStructs.dll">
+      <publishTime>08/14/2024 15:33:29</publishTime>
+    </File>
+    <File Include="bin/guardiaoStructs.dll.config">
+      <publishTime>06/24/2024 19:01:35</publishTime>
+    </File>
+    <File Include="bin/guardiaoStructs.pdb">
+      <publishTime>08/14/2024 15:33:29</publishTime>
+    </File>
+    <File Include="bin/guardiaows.dll">
+      <publishTime>08/23/2024 12:22:00</publishTime>
+    </File>
+    <File Include="bin/guardiaows.pdb">
+      <publishTime>08/23/2024 12:22:00</publishTime>
+    </File>
+    <File Include="bin/GUARDIAO_HELPER_ASAAS.dll">
+      <publishTime>08/23/2024 12:21:58</publishTime>
+    </File>
+    <File Include="bin/GUARDIAO_HELPER_ASAAS.dll.config">
+      <publishTime>05/31/2024 11:04:36</publishTime>
+    </File>
+    <File Include="bin/GUARDIAO_HELPER_ASAAS.pdb">
+      <publishTime>08/23/2024 12:21:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>10/18/2022 13:19:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 20:03:36</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>04/09/2023 14:40:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>02/19/2020 07:05:18</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>05/08/2022 00:31:02</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>05/15/2018 10:29:44</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>10/22/2021 20:40:18</publishTime>
+    </File>
+    <File Include="bin/System.Text.Encodings.Web.dll">
+      <publishTime>10/18/2022 13:31:48</publishTime>
+    </File>
+    <File Include="bin/System.Text.Json.dll">
+      <publishTime>01/19/2023 21:01:50</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>02/19/2020 07:05:18</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>05/15/2018 10:29:52</publishTime>
+    </File>
+    <File Include="guardiaows.asmx">
+      <publishTime>02/28/2024 16:36:18</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>08/23/2024 12:22:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/24/2024 21:54:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
