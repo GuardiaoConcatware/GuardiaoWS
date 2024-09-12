@@ -20,7 +20,7 @@ namespace GUARDIAO_CONTROLLER.DATABASE
             {
                 GUARDIAO_CRUD.DATABASE.Usuario objUsuario = new GUARDIAO_CRUD.DATABASE.Usuario();
                 //if (!isPersonLogin)
-                usuario = objUsuario.ValidarLoginUsuario(usuario_cpf, usuario_senha); // GUARDIAO_COMMOM.Crypto.DecryptSentence(usuario_senha)
+                usuario = objUsuario.ValidarLoginUsuario(usuario_cpf, usuario_senha, 0); // GUARDIAO_COMMOM.Crypto.DecryptSentence(usuario_senha)
                 /* else
                      usuario = objUsuario.ValidarLoginEmpresa(usuario_cpf, usuario_senha);*/
             }

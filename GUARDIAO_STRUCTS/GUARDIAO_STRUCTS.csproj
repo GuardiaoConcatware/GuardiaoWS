@@ -39,7 +39,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\GUARDIAO_WEB\GUARDIAO\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <HintPath>..\GUARDIAO_WS\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,6 +60,7 @@
     <Compile Include="DATABASE\AlterarSenha.cs" />
     <Compile Include="DATABASE\ArquivoHistoricoAtendimento.cs" />
     <Compile Include="DATABASE\ArquivoHistoricoAtendimentoFull.cs" />
+    <Compile Include="DATABASE\AtendimentoQuantidade.cs" />
     <Compile Include="DATABASE\Atendimentos.cs" />
     <Compile Include="DATABASE\Anuncio.cs" />
     <Compile Include="DATABASE\ASAAS\CreatePixSaida.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="DATABASE\Escritorio.cs" />
     <Compile Include="DATABASE\Especialidade.cs" />
     <Compile Include="DATABASE\EspecialidadeMobile.cs" />
+    <Compile Include="DATABASE\EspecialidadeQuantidade.cs" />
     <Compile Include="DATABASE\EspecialidadeUsuario.cs" />
     <Compile Include="DATABASE\Extrato.cs" />
     <Compile Include="DATABASE\ExtratoList.cs" />
@@ -109,6 +112,7 @@
     <Compile Include="DATABASE\MunicipioDart.cs" />
     <Compile Include="DATABASE\ParametrosSistema.cs" />
     <Compile Include="DATABASE\PercentualPreco.cs" />
+    <Compile Include="DATABASE\QuantidadeUsuario.cs" />
     <Compile Include="DATABASE\RelatorioAtendimentoAdministrativo.cs" />
     <Compile Include="DATABASE\RelatorioAtendimentoAdministrativoDart.cs" />
     <Compile Include="DATABASE\RelatorioAtendimentos.cs" />
@@ -123,6 +127,7 @@
     <Compile Include="DATABASE\TipoConsulta.cs" />
     <Compile Include="DATABASE\TipoUsuario.cs" />
     <Compile Include="DATABASE\Usuario.cs" />
+    <Compile Include="DATABASE\UsuarioAdvogadoAtivo.cs" />
     <Compile Include="DATABASE\UsuarioEmpresaCadastrados.cs" />
     <Compile Include="DATABASE\UsuarioListaMobile.cs" />
     <Compile Include="DATABASE\UsuarioMobile.cs" />
@@ -173,10 +178,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\GUARDIAO_WEB\GUARDIAO\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\..\GUARDIAO_WEB\GUARDIAO\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\GUARDIAO_WEB\GUARDIAO\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\GUARDIAO_WEB\GUARDIAO\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
-  </Target>
+  <Import Project="..\GUARDIAO_WS\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\GUARDIAO_WS\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
 </Project>
