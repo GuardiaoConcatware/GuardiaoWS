@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/SoRYlasrlotdBvXC3vJEzE9j4p30USLJRYgycoHVJiCCbjKgd0IFFkkHzGWOhidOaueimP/7GAhdwRpojCNdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\4.1.0\\microsoft.codedom.providers.dotnetcompilerplatform.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
