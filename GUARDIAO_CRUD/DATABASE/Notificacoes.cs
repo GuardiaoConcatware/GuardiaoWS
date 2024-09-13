@@ -17,17 +17,29 @@ namespace GUARDIAO_CRUD.DATABASE
             int reg = 0;
             try
             {
-               // DeleteAllUsuarioOnlineById(online.usuario_id);
+                // DeleteAllUsuarioOnlineById(online.usuario_id);
+                /*
+                 public long notificacao_id { get; set; }
+        public long usuario_id { get; set; }
+        public string notificacao_descricao { get; set; }
+        public string notificacao_data { get; set; }
+        public string notificacao_titulo { get; set; }
+        public bool notificacao_status { get; set; }
+                 */
 
-                sql = "INSERT INTO tblNotificacoes(usuario_id";
+                sql = " INSERT INTO tblNotificacoes (usuario_id";
                 sql += " ,notificacao_descricao";
+                sql += " , notificacao_titulo";
+                sql += " , notificacao_status";
                 sql += " , notificacao_data)";
-                sql += " VALUES(?,?,?)";
+                sql += " VALUES(?,?,?,?,?)";
 
                 OpenDataBase();
                 CM = new System.Data.OleDb.OleDbCommand(sql, CN);
                 CM.Parameters.Add(@"usuario_id", System.Data.OleDb.OleDbType.Numeric).Value = notificacao.usuario_id;
                 CM.Parameters.Add(@"notificacao_descricao", System.Data.OleDb.OleDbType.VarChar).Value = notificacao.notificacao_descricao;
+                CM.Parameters.Add(@"notificacao_titulo", System.Data.OleDb.OleDbType.VarChar).Value = notificacao.notificacao_titulo;
+                CM.Parameters.Add(@"notificacao_status", System.Data.OleDb.OleDbType.Boolean).Value = notificacao.notificacao_status;
                 CM.Parameters.Add(@"notificacao_data", System.Data.OleDb.OleDbType.Date).Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
                 reg = CM.ExecuteNonQuery();
@@ -84,9 +96,15 @@ namespace GUARDIAO_CRUD.DATABASE
                 sql = "SELECT notificacao_id";
                 sql += " , usuario_id";
                 sql += " , notificacao_descricao";
+                sql += " , notificacao_titulo";
                 sql += " , notificacao_data";
+                sql += " , notificacao_status";
                 sql += " FROM tblNotificacoes ";
-                sql += " WHERE usuario_id = " + usuario_id;
+                if (usuario_id != 0)
+                {
+
+                    sql += " WHERE usuario_id = " + usuario_id;
+                }
 
                 ds = ExecuteSelect(sql);
                 if (ds == null)
@@ -106,6 +124,33 @@ namespace GUARDIAO_CRUD.DATABASE
                 GUARDIAO_COMMOM.Error.CreateLogError(ex, System.Reflection.MethodBase.GetCurrentMethod().Name, typeof(Notificacoes).Namespace);
             }
             return notificacao;
+        }
+
+        public bool UpdateNotificacao(long notificacao_id)
+        {
+            string sql = "";
+            int reg = 0;
+            bool resul = true;
+            try
+            {
+                sql = " UPDATE tblNotificacoes SET ";
+                sql += " notificacao_status = ? ";
+                sql += " WHERE notificacao_id = " + notificacao_id;
+                OpenDataBase();
+                CM = new System.Data.OleDb.OleDbCommand(sql, CN);
+                CM.Parameters.Add(@"notificacao_status", System.Data.OleDb.OleDbType.Boolean).Value = true;
+                reg = CM.ExecuteNonQuery();
+                if (reg == 0)
+                    throw new Exception("UM ERRO INESPERADO ACONTECEU");
+
+            }
+            catch (Exception ex)
+            {
+
+                resul = false;
+                GUARDIAO_COMMOM.Error.CreateLogError(ex, System.Reflection.MethodBase.GetCurrentMethod().Name, typeof(Notificacoes).Namespace);
+            }
+            return resul;
         }
     }
 }

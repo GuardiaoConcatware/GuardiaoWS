@@ -33,6 +33,24 @@ namespace GUARDIAO_CONTROLLER.DATABASE
             return JsonConvert.SerializeObject(notificacao);
         }
 
+        public string UpdateNotificacao(long json)
+        {
+            bool resul = true;
+            try
+            {
+                //tipoUsuario = JsonConvert.DeserializeObject<GUARDIAO_STRUCTS.DATABASE.Notificacao>(json);
+                objNotificacoes = new GUARDIAO_CRUD.DATABASE.Notificacoes();
+                resul = objNotificacoes.UpdateNotificacao(json);
+                // tipoUsuario = objNotificacoes.UpdateNotificacao(tipoUsuario);
+            }
+            catch (Exception ex)
+            {
+                resul = false;
+                GUARDIAO_COMMOM.Error.CreateLogError(ex, System.Reflection.MethodBase.GetCurrentMethod().Name, typeof(TipoUsuario).Namespace);
+            }
+
+            return JsonConvert.SerializeObject(resul);
+        }
 
         public string GetAllNotificacoes(long usuario_id)
         {
