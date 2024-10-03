@@ -108,13 +108,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="REST\RestBodyHelper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GUARDIAO_COMMOM\GUARDIAO_COMMOM.csproj">
+      <Project>{9d7cd24a-8a09-4f7e-8437-ac274a6c75aa}</Project>
+      <Name>GUARDIAO_COMMOM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GUARDIAO_STRUCTS\GUARDIAO_STRUCTS.csproj">
       <Project>{d27bb69a-9c42-4200-b4f1-68c2b8ac005e}</Project>
       <Name>GUARDIAO_STRUCTS</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="REST\RestBodyHelper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
