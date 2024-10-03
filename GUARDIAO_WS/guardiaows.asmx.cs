@@ -50,6 +50,7 @@ namespace GUARDIAO_WS
         private GUARDIAO_CONTROLLER.DATABASE.SolicitacaoRecebimento objSolicitacaoRecebimento = null;
         private GUARDIAO_CONTROLLER.DATABASE.Atendimento objAtendimento = null;
         private GUARDIAO_CONTROLLER.DATABASE.Atendimentos objAtendimentos = null;
+        private GUARDIAO_CONTROLLER.DATABASE.Notificacoes objNotificacoes = null;
 
 
         [WebMethod]
@@ -542,6 +543,158 @@ namespace GUARDIAO_WS
             }
 
             return especialidade;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetEspecialidadesData()
+        {
+            string especialidade = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objEspecialidade = new GUARDIAO_CONTROLLER.DATABASE.Especialidade();
+                especialidade = objEspecialidade.GetEspecialidadesData();
+            }
+            catch (Exception)
+            {
+                especialidade = null;
+            }
+
+            return especialidade;
+        }
+
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetEspecialidadesDataByAdvogado(int idUsuario)
+        {
+            string especialidade = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objEspecialidade = new GUARDIAO_CONTROLLER.DATABASE.Especialidade();
+                especialidade = objEspecialidade.GetEspecialidadesDataByAdvogado(idUsuario);
+            }
+            catch (Exception)
+            {
+                especialidade = null;
+            }
+
+            return especialidade;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetCrescimentoUsuario()
+        {
+            string especialidade = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objUsuario = new GUARDIAO_CONTROLLER.DATABASE.Usuario();
+                especialidade = objUsuario.GetQuantidadeUsuarioData();
+            }
+            catch (Exception)
+            {
+                especialidade = null;
+            }
+
+            return especialidade;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetCrescimentoUsuarioByAdvogado(int idUsuario)
+        {
+            string especialidade = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objUsuario = new GUARDIAO_CONTROLLER.DATABASE.Usuario();
+                especialidade = objUsuario.GetQuantidadeUsuarioData(idUsuario);
+            }
+            catch (Exception)
+            {
+                especialidade = null;
+            }
+
+            return especialidade;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetAtendimentosData()
+        {
+            string atendimentos = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objAtendimentos = new GUARDIAO_CONTROLLER.DATABASE.Atendimentos();
+                atendimentos = objAtendimentos.GetAtendimentosData();
+            }
+            catch (Exception)
+            {
+                atendimentos = null;
+            }
+
+            return atendimentos;
+        }
+
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetAtendimentosDataByAdvogado(int idUsuario)
+        {
+            string atendimentos = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objAtendimentos = new GUARDIAO_CONTROLLER.DATABASE.Atendimentos();
+                atendimentos = objAtendimentos.GetAtendimentosData(idUsuario);
+            }
+            catch (Exception)
+            {
+                atendimentos = null;
+            }
+
+            return atendimentos;
         }
 
         [WebMethod]
@@ -1486,6 +1639,81 @@ namespace GUARDIAO_WS
 
                 objUsuario = new GUARDIAO_CONTROLLER.DATABASE.Usuario();
                 usuarios = objUsuario.GetAllUsuarioByAdvogadoIDEspecianlidade(advogado_id, especialidade_id);
+            }
+            catch (Exception)
+            {
+                usuarios = null;
+            }
+            return usuarios;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetAllUsuarioAdvogadoAtivo()
+        {
+
+            string usuarios = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objUsuario = new GUARDIAO_CONTROLLER.DATABASE.Usuario();
+                usuarios = objUsuario.GetAllUsuarioAdvogadoAtivo();
+            }
+            catch (Exception)
+            {
+                usuarios = null;
+            }
+            return usuarios;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetAllUsuarioAdvogadoAtendimentoAtivo(int idUsuario)
+        {
+
+            string usuarios = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objUsuario = new GUARDIAO_CONTROLLER.DATABASE.Usuario();
+                usuarios = objUsuario.GetAllUsuarioAdvogadoAtivo(idUsuario);
+            }
+            catch (Exception)
+            {
+                usuarios = null;
+            }
+            return usuarios;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoAtivarUsuario(int idUsuario)
+        {
+
+            string usuarios = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objUsuario = new GUARDIAO_CONTROLLER.DATABASE.Usuario();
+                usuarios = objUsuario.AtivaUsuario(idUsuario);
             }
             catch (Exception)
             {
@@ -3038,7 +3266,7 @@ namespace GUARDIAO_WS
 
         [WebMethod]
         [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
-        public string GuardiaoValidarLoginUsuarioApp(long usuario_cpf, string usuario_senha)//, bool isPersonLogin)
+        public string GuardiaoValidarLoginUsuarioApp(long usuario_cpf, string usuario_senha, int tipoUsuario = 0)//, bool isPersonLogin)
         {
 
             string usuario = null;
@@ -3283,6 +3511,109 @@ namespace GUARDIAO_WS
 
         #endregion
 
+
+        #region NOTIFICAÇÃO
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoInsertNotificacao(string json)
+        {
+            string notificacao = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objNotificacoes = new GUARDIAO_CONTROLLER.DATABASE.Notificacoes();
+                notificacao = objNotificacoes.InsertNotificacao(json);
+            }
+            catch (Exception)
+            {
+                notificacao = null;
+            }
+            return notificacao;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoDeleteNotificacao(string json)
+        {
+            string notificacao = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objNotificacoes = new GUARDIAO_CONTROLLER.DATABASE.Notificacoes();
+                notificacao = objNotificacoes.DeleteNotificacoes(json);
+            }
+            catch (Exception)
+            {
+                notificacao = null;
+            }
+            return notificacao;
+        }
+
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoGetAllnotificacoes(long usuario_id)
+        {
+            string notificacoes = null;
+            try
+            {
+
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objNotificacoes = new GUARDIAO_CONTROLLER.DATABASE.Notificacoes();
+                notificacoes = objNotificacoes.GetAllNotificacoes(usuario_id);
+            }
+            catch (Exception)
+            {
+                notificacoes = null;
+
+            }
+
+            return notificacoes;
+        }
+
+        [WebMethod]
+        [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]
+        public string GuardiaoUpdateNotificacao(long solicitacaoAtendimento_id)
+        {
+            string resul = null;
+            try
+            {
+                if (mySoapHeader == null)
+                    throw new Exception("OPS! FAVOR INFORMAR AS CRENDENCIAIS.");
+                if (validateSoap == null)
+                    validateSoap = new GUARDIAO_CONTROLLER.SOAPHEADER.ValidateSoapHeader();
+                if (!validateSoap.Valdate(mySoapHeader))
+                    throw new Exception("OPS! CRENDENCIAIS INVÁLIDAS.");
+
+                objNotificacoes = new GUARDIAO_CONTROLLER.DATABASE.Notificacoes();
+                resul = objNotificacoes.UpdateNotificacao(solicitacaoAtendimento_id);
+            }
+            catch (Exception)
+            {
+                resul = null;
+            }
+            return resul;
+        }
+        #endregion
 
         [WebMethod]
         [SoapHeader("mySoapHeader", Direction = SoapHeaderDirection.InOut)]

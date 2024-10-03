@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj": {}
+    "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj": {}
   },
   "projects": {
-    "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj": {
+    "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
-        "projectName": "guardiaoCommom",
-        "projectPath": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
-        "packagesPath": "C:\\Users\\JoaoBdeOjr\\.nuget\\packages\\",
-        "outputPath": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\obj\\",
+        "projectUniqueName": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
+        "projectName": "GUARDIAO_COMMOM",
+        "projectPath": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
+        "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\JoaoBdeOjr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj": {
-                "projectPath": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj"
+              "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj": {
+                "projectPath": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj"
               }
             }
           }
@@ -49,9 +53,6 @@
         "win": {
           "#import": []
         },
-        "win-arm64": {
-          "#import": []
-        },
         "win-x64": {
           "#import": []
         },
@@ -60,11 +61,11 @@
         }
       }
     },
-    "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj": {
+    "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj",
+        "projectUniqueName": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj",
         "projectName": "GUARDIAO_STRUCTS",
-        "projectPath": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj",
+        "projectPath": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_STRUCTS\\GUARDIAO_STRUCTS.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

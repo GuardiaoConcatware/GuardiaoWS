@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LANCWefBKka1oZedOgDUeeZakN7QsvEL/ZnxZuktxvpKZGqtX6ta1ybQTw6MMPiL7xUaBmfG3Ww40IG0RzgRNw==",
+  "dgSpecHash": "/SoRYlasrlotdBvXC3vJEzE9j4p30USLJRYgycoHVJiCCbjKgd0IFFkkHzGWOhidOaueimP/7GAhdwRpojCNdA==",
   "success": true,
-  "projectFilePath": "C:\\CWGIT\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
+  "projectFilePath": "C:\\Users\\Luiz\\Documents\\Projetos\\GUARDIAO_DIREITO\\GuardiaoWS\\GUARDIAO_COMMOM\\GUARDIAO_COMMOM.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\JoaoBdeOjr\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\4.1.0\\microsoft.codedom.providers.dotnetcompilerplatform.4.1.0.nupkg.sha512"
+    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\4.1.0\\microsoft.codedom.providers.dotnetcompilerplatform.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }

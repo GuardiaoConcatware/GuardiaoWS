@@ -59,6 +59,7 @@
     <Compile Include="DATABASE\AlterarSenha.cs" />
     <Compile Include="DATABASE\ArquivoHistoricoAtendimento.cs" />
     <Compile Include="DATABASE\ArquivoHistoricoAtendimentoFull.cs" />
+    <Compile Include="DATABASE\AtendimentoQuantidade.cs" />
     <Compile Include="DATABASE\Atendimentos.cs" />
     <Compile Include="DATABASE\Anuncio.cs" />
     <Compile Include="DATABASE\ASAAS\CreatePixSaida.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="DATABASE\Escritorio.cs" />
     <Compile Include="DATABASE\Especialidade.cs" />
     <Compile Include="DATABASE\EspecialidadeMobile.cs" />
+    <Compile Include="DATABASE\EspecialidadeQuantidade.cs" />
     <Compile Include="DATABASE\EspecialidadeUsuario.cs" />
     <Compile Include="DATABASE\Extrato.cs" />
     <Compile Include="DATABASE\ExtratoList.cs" />
@@ -109,6 +111,7 @@
     <Compile Include="DATABASE\MunicipioDart.cs" />
     <Compile Include="DATABASE\ParametrosSistema.cs" />
     <Compile Include="DATABASE\PercentualPreco.cs" />
+    <Compile Include="DATABASE\QuantidadeUsuario.cs" />
     <Compile Include="DATABASE\RelatorioAtendimentoAdministrativo.cs" />
     <Compile Include="DATABASE\RelatorioAtendimentoAdministrativoDart.cs" />
     <Compile Include="DATABASE\RelatorioAtendimentos.cs" />
@@ -123,6 +126,7 @@
     <Compile Include="DATABASE\TipoConsulta.cs" />
     <Compile Include="DATABASE\TipoUsuario.cs" />
     <Compile Include="DATABASE\Usuario.cs" />
+    <Compile Include="DATABASE\UsuarioAdvogadoAtivo.cs" />
     <Compile Include="DATABASE\UsuarioEmpresaCadastrados.cs" />
     <Compile Include="DATABASE\UsuarioListaMobile.cs" />
     <Compile Include="DATABASE\UsuarioMobile.cs" />
